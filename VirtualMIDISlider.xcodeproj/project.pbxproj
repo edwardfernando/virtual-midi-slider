@@ -1,0 +1,582 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A10000001 /* VirtualMIDISliderApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000001 /* VirtualMIDISliderApp.swift */; };
+		A10000002 /* SliderConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000002 /* SliderConfiguration.swift */; };
+		A10000003 /* Preset.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000003 /* Preset.swift */; };
+		A10000004 /* LayoutMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000004 /* LayoutMode.swift */; };
+		A10000005 /* AppSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000005 /* AppSettings.swift */; };
+		A10000006 /* MIDIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000006 /* MIDIManager.swift */; };
+		A10000007 /* MIDIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000007 /* MIDIConstants.swift */; };
+		A10000008 /* SliderBankViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000008 /* SliderBankViewModel.swift */; };
+		A10000009 /* SliderBankView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000009 /* SliderBankView.swift */; };
+		A10000010 /* MIDISliderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000010 /* MIDISliderView.swift */; };
+		A10000011 /* SliderSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000011 /* SliderSettingsView.swift */; };
+		A10000012 /* PresetManagerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000012 /* PresetManagerView.swift */; };
+		A10000013 /* PersistenceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000013 /* PersistenceManager.swift */; };
+		A10000014 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A20000014 /* Assets.xcassets */; };
+		A10000015 /* CoreMIDI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A20000015 /* CoreMIDI.framework */; };
+		B10000001 /* MIDISyncViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000001 /* MIDISyncViewController.swift */; };
+		B10000002 /* MIDISyncAudioUnit.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000002 /* MIDISyncAudioUnit.swift */; };
+		B10000003 /* CoreMIDI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A20000015 /* CoreMIDI.framework */; };
+		B10000004 /* MIDISyncAU.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = B30000001 /* MIDISyncAU.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B40000001 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A90000001 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B60000001;
+			remoteInfo = MIDISyncAU;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		B50000001 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				B10000004 /* MIDISyncAU.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		A20000001 /* VirtualMIDISliderApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VirtualMIDISliderApp.swift; sourceTree = "<group>"; };
+		A20000002 /* SliderConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderConfiguration.swift; sourceTree = "<group>"; };
+		A20000003 /* Preset.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Preset.swift; sourceTree = "<group>"; };
+		A20000004 /* LayoutMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutMode.swift; sourceTree = "<group>"; };
+		A20000005 /* AppSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSettings.swift; sourceTree = "<group>"; };
+		A20000006 /* MIDIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MIDIManager.swift; sourceTree = "<group>"; };
+		A20000007 /* MIDIConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MIDIConstants.swift; sourceTree = "<group>"; };
+		A20000008 /* SliderBankViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderBankViewModel.swift; sourceTree = "<group>"; };
+		A20000009 /* SliderBankView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderBankView.swift; sourceTree = "<group>"; };
+		A20000010 /* MIDISliderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MIDISliderView.swift; sourceTree = "<group>"; };
+		A20000011 /* SliderSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderSettingsView.swift; sourceTree = "<group>"; };
+		A20000012 /* PresetManagerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresetManagerView.swift; sourceTree = "<group>"; };
+		A20000013 /* PersistenceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceManager.swift; sourceTree = "<group>"; };
+		A20000014 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A20000015 /* CoreMIDI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMIDI.framework; path = System/Library/Frameworks/CoreMIDI.framework; sourceTree = SDKROOT; };
+		A20000016 /* VirtualMIDISlider.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = VirtualMIDISlider.entitlements; sourceTree = "<group>"; };
+		A30000001 /* VirtualMIDISlider.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VirtualMIDISlider.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B20000001 /* MIDISyncViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MIDISyncViewController.swift; sourceTree = "<group>"; };
+		B20000002 /* MIDISyncAudioUnit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MIDISyncAudioUnit.swift; sourceTree = "<group>"; };
+		B20000003 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B20000004 /* MIDISyncAU.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MIDISyncAU.entitlements; sourceTree = "<group>"; };
+		B30000001 /* MIDISyncAU.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = MIDISyncAU.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A40000001 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A10000015 /* CoreMIDI.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B40000002 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B10000003 /* CoreMIDI.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A50000001 = {
+			isa = PBXGroup;
+			children = (
+				A50000002 /* VirtualMIDISlider */,
+				B50000002 /* MIDISyncAU */,
+				A50000009 /* Frameworks */,
+				A50000010 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A50000002 /* VirtualMIDISlider */ = {
+			isa = PBXGroup;
+			children = (
+				A50000003 /* App */,
+				A50000004 /* Models */,
+				A50000005 /* MIDI */,
+				A50000006 /* ViewModels */,
+				A50000007 /* Views */,
+				A50000008 /* Persistence */,
+				A20000014 /* Assets.xcassets */,
+				A20000016 /* VirtualMIDISlider.entitlements */,
+			);
+			path = VirtualMIDISlider;
+			sourceTree = "<group>";
+		};
+		A50000003 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				A20000001 /* VirtualMIDISliderApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		A50000004 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A20000002 /* SliderConfiguration.swift */,
+				A20000003 /* Preset.swift */,
+				A20000004 /* LayoutMode.swift */,
+				A20000005 /* AppSettings.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		A50000005 /* MIDI */ = {
+			isa = PBXGroup;
+			children = (
+				A20000006 /* MIDIManager.swift */,
+				A20000007 /* MIDIConstants.swift */,
+			);
+			path = MIDI;
+			sourceTree = "<group>";
+		};
+		A50000006 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				A20000008 /* SliderBankViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		A50000007 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A20000009 /* SliderBankView.swift */,
+				A20000010 /* MIDISliderView.swift */,
+				A20000011 /* SliderSettingsView.swift */,
+				A20000012 /* PresetManagerView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A50000008 /* Persistence */ = {
+			isa = PBXGroup;
+			children = (
+				A20000013 /* PersistenceManager.swift */,
+			);
+			path = Persistence;
+			sourceTree = "<group>";
+		};
+		A50000009 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A20000015 /* CoreMIDI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A50000010 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A30000001 /* VirtualMIDISlider.app */,
+				B30000001 /* MIDISyncAU.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B50000002 /* MIDISyncAU */ = {
+			isa = PBXGroup;
+			children = (
+				B20000001 /* MIDISyncViewController.swift */,
+				B20000002 /* MIDISyncAudioUnit.swift */,
+				B20000003 /* Info.plist */,
+				B20000004 /* MIDISyncAU.entitlements */,
+			);
+			path = MIDISyncAU;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A60000001 /* VirtualMIDISlider */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A80000003 /* Build configuration list for PBXNativeTarget "VirtualMIDISlider" */;
+			buildPhases = (
+				A70000001 /* Sources */,
+				A40000001 /* Frameworks */,
+				A70000002 /* Resources */,
+				B50000001 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B40000003 /* PBXTargetDependency */,
+			);
+			name = VirtualMIDISlider;
+			productName = VirtualMIDISlider;
+			productReference = A30000001 /* VirtualMIDISlider.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B60000001 /* MIDISyncAU */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B80000001 /* Build configuration list for PBXNativeTarget "MIDISyncAU" */;
+			buildPhases = (
+				B70000001 /* Sources */,
+				B40000002 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MIDISyncAU;
+			productName = MIDISyncAU;
+			productReference = B30000001 /* MIDISyncAU.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A90000001 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					A60000001 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+					B60000001 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+				};
+			};
+			buildConfigurationList = A80000001 /* Build configuration list for PBXProject "VirtualMIDISlider" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A50000001;
+			productRefGroup = A50000010 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A60000001 /* VirtualMIDISlider */,
+				B60000001 /* MIDISyncAU */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A70000002 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A10000014 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A70000001 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A10000001 /* VirtualMIDISliderApp.swift in Sources */,
+				A10000002 /* SliderConfiguration.swift in Sources */,
+				A10000003 /* Preset.swift in Sources */,
+				A10000004 /* LayoutMode.swift in Sources */,
+				A10000005 /* AppSettings.swift in Sources */,
+				A10000006 /* MIDIManager.swift in Sources */,
+				A10000007 /* MIDIConstants.swift in Sources */,
+				A10000008 /* SliderBankViewModel.swift in Sources */,
+				A10000009 /* SliderBankView.swift in Sources */,
+				A10000010 /* MIDISliderView.swift in Sources */,
+				A10000011 /* SliderSettingsView.swift in Sources */,
+				A10000012 /* PresetManagerView.swift in Sources */,
+				A10000013 /* PersistenceManager.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B70000001 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B10000001 /* MIDISyncViewController.swift in Sources */,
+				B10000002 /* MIDISyncAudioUnit.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B40000003 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B60000001 /* MIDISyncAU */;
+			targetProxy = B40000001 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		A80000010 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A80000011 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		A80000020 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = VirtualMIDISlider/VirtualMIDISlider.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3QKUC8287L;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.music";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.virtualmidislider.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		A80000021 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = VirtualMIDISlider/VirtualMIDISlider.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3QKUC8287L;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.music";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.virtualmidislider.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		B80000010 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = MIDISyncAU/MIDISyncAU.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3QKUC8287L;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = MIDISyncAU/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.virtualmidislider.app.MIDISyncAU;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		B80000011 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = MIDISyncAU/MIDISyncAU.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3QKUC8287L;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = MIDISyncAU/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.virtualmidislider.app.MIDISyncAU;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A80000001 /* Build configuration list for PBXProject "VirtualMIDISlider" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A80000010 /* Debug */,
+				A80000011 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A80000003 /* Build configuration list for PBXNativeTarget "VirtualMIDISlider" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A80000020 /* Debug */,
+				A80000021 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B80000001 /* Build configuration list for PBXNativeTarget "MIDISyncAU" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B80000010 /* Debug */,
+				B80000011 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A90000001 /* Project object */;
+}
